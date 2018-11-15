@@ -1,0 +1,705 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		070055152192694A00CE2ACF /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070055142192694A00CE2ACF /* ProfileViewController.swift */; };
+		07005518219279F000CE2ACF /* SupportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07005517219279F000CE2ACF /* SupportViewController.swift */; };
+		0700551A21927A6500CE2ACF /* support.png in Resources */ = {isa = PBXBuildFile; fileRef = 0700551921927A6500CE2ACF /* support.png */; };
+		070269EA218D107A0009EABC /* TableTitleLabelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070269E9218D107A0009EABC /* TableTitleLabelModel.swift */; };
+		070269EC218D12A90009EABC /* IRepositoryBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070269EB218D12A90009EABC /* IRepositoryBase.swift */; };
+		070269EE218D13040009EABC /* RepositoryBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070269ED218D13040009EABC /* RepositoryBase.swift */; };
+		070269F0218D13620009EABC /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070269EF218D13620009EABC /* Entity.swift */; };
+		070269F3218D159A0009EABC /* SoftwareEmbeddedDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070269F2218D159A0009EABC /* SoftwareEmbeddedDatabase.swift */; };
+		070269F5218D16F20009EABC /* IServiceBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070269F4218D16F20009EABC /* IServiceBase.swift */; };
+		070269F7218D17160009EABC /* ServiceBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070269F6218D17160009EABC /* ServiceBase.swift */; };
+		077C231A218920E2004FBF3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077C2319218920E2004FBF3E /* AppDelegate.swift */; };
+		077C231C218920E2004FBF3E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077C231B218920E2004FBF3E /* ViewController.swift */; };
+		077C231F218920E2004FBF3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 077C231D218920E2004FBF3E /* Main.storyboard */; };
+		077C2321218920E5004FBF3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 077C2320218920E5004FBF3E /* Assets.xcassets */; };
+		077C2324218920E5004FBF3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 077C2322218920E5004FBF3E /* LaunchScreen.storyboard */; };
+		077C232D21892554004FBF3E /* easy-parking-logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 077C232C21892554004FBF3E /* easy-parking-logo.jpg */; };
+		077C233121892AA3004FBF3E /* SignUpFirstPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077C233021892AA3004FBF3E /* SignUpFirstPageViewController.swift */; };
+		07CD28B121911332001D62A9 /* AlertUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CD28B021911332001D62A9 /* AlertUtil.swift */; };
+		07CD28B321912898001D62A9 /* add.png in Resources */ = {isa = PBXBuildFile; fileRef = 07CD28B221912897001D62A9 /* add.png */; };
+		07CD28B521912967001D62A9 /* report.png in Resources */ = {isa = PBXBuildFile; fileRef = 07CD28B421912967001D62A9 /* report.png */; };
+		07CD28B7219129B8001D62A9 /* location.png in Resources */ = {isa = PBXBuildFile; fileRef = 07CD28B6219129B8001D62A9 /* location.png */; };
+		07CD28B921912A98001D62A9 /* logout.png in Resources */ = {isa = PBXBuildFile; fileRef = 07CD28B821912A98001D62A9 /* logout.png */; };
+		07CD28BB21912AA2001D62A9 /* location_settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 07CD28BA21912AA2001D62A9 /* location_settings.png */; };
+		07CD28BD21912AB5001D62A9 /* contacts.png in Resources */ = {isa = PBXBuildFile; fileRef = 07CD28BC21912AB4001D62A9 /* contacts.png */; };
+		07F774B6219B9675002223CC /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F774AB219B9675002223CC /* FMDatabaseQueue.m */; };
+		07F774B7219B9675002223CC /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F774AC219B9675002223CC /* FMDatabasePool.m */; };
+		07F774B8219B9675002223CC /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F774AE219B9675002223CC /* FMResultSet.m */; };
+		07F774B9219B9675002223CC /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F774AF219B9675002223CC /* FMDatabaseAdditions.m */; };
+		07F774BA219B9675002223CC /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F774B2219B9675002223CC /* FMDatabase.m */; };
+		07F774BC219B9D33002223CC /* Database.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 07F774BB219B9D33002223CC /* Database.sqlite */; };
+		07FA5005219CEAD00066AF26 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FA5004219CEAD00066AF26 /* LocationViewController.swift */; };
+		07FA5007219CF00B0066AF26 /* ParkingPaymentReceipt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FA5006219CF00B0066AF26 /* ParkingPaymentReceipt.swift */; };
+		07FA5009219CF3260066AF26 /* IParkingPaymentReceiptRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FA5008219CF3260066AF26 /* IParkingPaymentReceiptRepository.swift */; };
+		07FA500B219CF34F0066AF26 /* ParkingPaymentReceiptRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FA500A219CF34F0066AF26 /* ParkingPaymentReceiptRepository.swift */; };
+		07FA500D219CF4D70066AF26 /* IParkingPaymentReceiptService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FA500C219CF4D70066AF26 /* IParkingPaymentReceiptService.swift */; };
+		07FA500F219CF4F20066AF26 /* ParkingPaymentReceiptService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FA500E219CF4F20066AF26 /* ParkingPaymentReceiptService.swift */; };
+		07FA5012219CF5B60066AF26 /* AddTicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FA5011219CF5B60066AF26 /* AddTicketViewController.swift */; };
+		07FD47DA219A4A2D004413C1 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FD47D9219A4A2D004413C1 /* HelpViewController.swift */; };
+		07FD47DC219A4DB5004413C1 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FD47DB219A4DB5004413C1 /* Database.swift */; };
+		07FE67722193AD0D002EB825 /* Settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 07FE67712193AD0D002EB825 /* Settings.plist */; };
+		07FE67742193B963002EB825 /* SettingsUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FE67732193B963002EB825 /* SettingsUtil.swift */; };
+		07FEE883218A6C0A00632133 /* SignUpSecondPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FEE882218A6C0A00632133 /* SignUpSecondPageViewController.swift */; };
+		07FEE886218A6DE500632133 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FEE885218A6DE500632133 /* User.swift */; };
+		07FEE889218A789500632133 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FEE888218A789500632133 /* UserService.swift */; };
+		07FEE88C218A795A00632133 /* IUserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FEE88B218A795A00632133 /* IUserService.swift */; };
+		07FEE890218A7A2800632133 /* IUserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FEE88F218A7A2800632133 /* IUserRepository.swift */; };
+		07FEE892218A7A4300632133 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FEE891218A7A4300632133 /* UserRepository.swift */; };
+		07FEE895218A804C00632133 /* RepositoryError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FEE894218A804C00632133 /* RepositoryError.swift */; };
+		07FFDE61219106BD00F26365 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FFDE60219106BD00F26365 /* LoginViewController.swift */; };
+		07FFDE642191090100F26365 /* MainMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FFDE632191090100F26365 /* MainMenuTableViewController.swift */; };
+		07FFDE6721910AB600F26365 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 07FFDE6621910AB600F26365 /* home.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		070055142192694A00CE2ACF /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		07005517219279F000CE2ACF /* SupportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportViewController.swift; sourceTree = "<group>"; };
+		0700551921927A6500CE2ACF /* support.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = support.png; sourceTree = "<group>"; };
+		070269E9218D107A0009EABC /* TableTitleLabelModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableTitleLabelModel.swift; sourceTree = "<group>"; };
+		070269EB218D12A90009EABC /* IRepositoryBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IRepositoryBase.swift; sourceTree = "<group>"; };
+		070269ED218D13040009EABC /* RepositoryBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryBase.swift; sourceTree = "<group>"; };
+		070269EF218D13620009EABC /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
+		070269F2218D159A0009EABC /* SoftwareEmbeddedDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoftwareEmbeddedDatabase.swift; sourceTree = "<group>"; };
+		070269F4218D16F20009EABC /* IServiceBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IServiceBase.swift; sourceTree = "<group>"; };
+		070269F6218D17160009EABC /* ServiceBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceBase.swift; sourceTree = "<group>"; };
+		077C2316218920E2004FBF3E /* EasyParking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyParking.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		077C2319218920E2004FBF3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		077C231B218920E2004FBF3E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		077C231E218920E2004FBF3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		077C2320218920E5004FBF3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		077C2323218920E5004FBF3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		077C2325218920E5004FBF3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		077C232C21892554004FBF3E /* easy-parking-logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "easy-parking-logo.jpg"; sourceTree = "<group>"; };
+		077C233021892AA3004FBF3E /* SignUpFirstPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFirstPageViewController.swift; sourceTree = "<group>"; };
+		07CD28B021911332001D62A9 /* AlertUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertUtil.swift; sourceTree = "<group>"; };
+		07CD28B221912897001D62A9 /* add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add.png; sourceTree = "<group>"; };
+		07CD28B421912967001D62A9 /* report.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = report.png; sourceTree = "<group>"; };
+		07CD28B6219129B8001D62A9 /* location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = location.png; sourceTree = "<group>"; };
+		07CD28B821912A98001D62A9 /* logout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logout.png; sourceTree = "<group>"; };
+		07CD28BA21912AA2001D62A9 /* location_settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = location_settings.png; sourceTree = "<group>"; };
+		07CD28BC21912AB4001D62A9 /* contacts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = contacts.png; sourceTree = "<group>"; };
+		07F774AA219B9674002223CC /* EasyParking-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EasyParking-Bridging-Header.h"; sourceTree = "<group>"; };
+		07F774AB219B9675002223CC /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		07F774AC219B9675002223CC /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		07F774AD219B9675002223CC /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		07F774AE219B9675002223CC /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		07F774AF219B9675002223CC /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		07F774B0219B9675002223CC /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		07F774B1219B9675002223CC /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		07F774B2219B9675002223CC /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		07F774B3219B9675002223CC /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		07F774B4219B9675002223CC /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		07F774B5219B9675002223CC /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		07F774BB219B9D33002223CC /* Database.sqlite */ = {isa = PBXFileReference; lastKnownFileType = text; path = Database.sqlite; sourceTree = "<group>"; };
+		07FA5004219CEAD00066AF26 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		07FA5006219CF00B0066AF26 /* ParkingPaymentReceipt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingPaymentReceipt.swift; sourceTree = "<group>"; };
+		07FA5008219CF3260066AF26 /* IParkingPaymentReceiptRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IParkingPaymentReceiptRepository.swift; sourceTree = "<group>"; };
+		07FA500A219CF34F0066AF26 /* ParkingPaymentReceiptRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingPaymentReceiptRepository.swift; sourceTree = "<group>"; };
+		07FA500C219CF4D70066AF26 /* IParkingPaymentReceiptService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IParkingPaymentReceiptService.swift; sourceTree = "<group>"; };
+		07FA500E219CF4F20066AF26 /* ParkingPaymentReceiptService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingPaymentReceiptService.swift; sourceTree = "<group>"; };
+		07FA5011219CF5B60066AF26 /* AddTicketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTicketViewController.swift; sourceTree = "<group>"; };
+		07FD47D9219A4A2D004413C1 /* HelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
+		07FD47DB219A4DB5004413C1 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		07FE67712193AD0D002EB825 /* Settings.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Settings.plist; sourceTree = "<group>"; };
+		07FE67732193B963002EB825 /* SettingsUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsUtil.swift; sourceTree = "<group>"; };
+		07FEE882218A6C0A00632133 /* SignUpSecondPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpSecondPageViewController.swift; sourceTree = "<group>"; };
+		07FEE885218A6DE500632133 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		07FEE888218A789500632133 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		07FEE88B218A795A00632133 /* IUserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IUserService.swift; sourceTree = "<group>"; };
+		07FEE88F218A7A2800632133 /* IUserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IUserRepository.swift; sourceTree = "<group>"; };
+		07FEE891218A7A4300632133 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		07FEE894218A804C00632133 /* RepositoryError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryError.swift; sourceTree = "<group>"; };
+		07FFDE60219106BD00F26365 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		07FFDE632191090100F26365 /* MainMenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuTableViewController.swift; sourceTree = "<group>"; };
+		07FFDE6621910AB600F26365 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		077C2313218920E2004FBF3E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		070055132192693200CE2ACF /* profile */ = {
+			isa = PBXGroup;
+			children = (
+				070055142192694A00CE2ACF /* ProfileViewController.swift */,
+			);
+			path = profile;
+			sourceTree = "<group>";
+		};
+		07005516219279E400CE2ACF /* support */ = {
+			isa = PBXGroup;
+			children = (
+				07005517219279F000CE2ACF /* SupportViewController.swift */,
+			);
+			path = support;
+			sourceTree = "<group>";
+		};
+		070269E8218D106B0009EABC /* model */ = {
+			isa = PBXGroup;
+			children = (
+				070269E9218D107A0009EABC /* TableTitleLabelModel.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		070269F1218D157E0009EABC /* util */ = {
+			isa = PBXGroup;
+			children = (
+				070269F2218D159A0009EABC /* SoftwareEmbeddedDatabase.swift */,
+				07CD28B021911332001D62A9 /* AlertUtil.swift */,
+				07FE67732193B963002EB825 /* SettingsUtil.swift */,
+				07FD47DB219A4DB5004413C1 /* Database.swift */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		077C230D218920E2004FBF3E = {
+			isa = PBXGroup;
+			children = (
+				077C2318218920E2004FBF3E /* EasyParking */,
+				077C2317218920E2004FBF3E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		077C2317218920E2004FBF3E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				077C2316218920E2004FBF3E /* EasyParking.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		077C2318218920E2004FBF3E /* EasyParking */ = {
+			isa = PBXGroup;
+			children = (
+				07F774A9219B962B002223CC /* FMDB */,
+				070269F1218D157E0009EABC /* util */,
+				070269E8218D106B0009EABC /* model */,
+				07FEE88D218A7A1800632133 /* repository */,
+				07FEE887218A788500632133 /* service */,
+				07FEE884218A6DDA00632133 /* domain */,
+				077C232E21892A71004FBF3E /* pages */,
+				077C232B21892544004FBF3E /* images */,
+				077C2319218920E2004FBF3E /* AppDelegate.swift */,
+				077C231B218920E2004FBF3E /* ViewController.swift */,
+				077C231D218920E2004FBF3E /* Main.storyboard */,
+				077C2320218920E5004FBF3E /* Assets.xcassets */,
+				077C2322218920E5004FBF3E /* LaunchScreen.storyboard */,
+				077C2325218920E5004FBF3E /* Info.plist */,
+				07FE67712193AD0D002EB825 /* Settings.plist */,
+				07F774BB219B9D33002223CC /* Database.sqlite */,
+			);
+			path = EasyParking;
+			sourceTree = "<group>";
+		};
+		077C232B21892544004FBF3E /* images */ = {
+			isa = PBXGroup;
+			children = (
+				07FFDE6521910A7A00F26365 /* main-menu */,
+				077C232C21892554004FBF3E /* easy-parking-logo.jpg */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		077C232E21892A71004FBF3E /* pages */ = {
+			isa = PBXGroup;
+			children = (
+				07FA5010219CF5A60066AF26 /* addTicket */,
+				07FA5003219CEAB40066AF26 /* location */,
+				07FD47D8219A4A20004413C1 /* help */,
+				07005516219279E400CE2ACF /* support */,
+				070055132192693200CE2ACF /* profile */,
+				07FFDE62219108EF00F26365 /* main */,
+				07FFDE5F219106A600F26365 /* login */,
+				077C232F21892A7B004FBF3E /* signup */,
+			);
+			path = pages;
+			sourceTree = "<group>";
+		};
+		077C232F21892A7B004FBF3E /* signup */ = {
+			isa = PBXGroup;
+			children = (
+				077C233021892AA3004FBF3E /* SignUpFirstPageViewController.swift */,
+				07FEE882218A6C0A00632133 /* SignUpSecondPageViewController.swift */,
+			);
+			path = signup;
+			sourceTree = "<group>";
+		};
+		07F774A9219B962B002223CC /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				07F774B4219B9675002223CC /* FMDatabase.h */,
+				07F774B2219B9675002223CC /* FMDatabase.m */,
+				07F774B3219B9675002223CC /* FMDatabaseAdditions.h */,
+				07F774AF219B9675002223CC /* FMDatabaseAdditions.m */,
+				07F774AD219B9675002223CC /* FMDatabasePool.h */,
+				07F774AC219B9675002223CC /* FMDatabasePool.m */,
+				07F774B1219B9675002223CC /* FMDatabaseQueue.h */,
+				07F774AB219B9675002223CC /* FMDatabaseQueue.m */,
+				07F774B0219B9675002223CC /* FMDB.h */,
+				07F774B5219B9675002223CC /* FMResultSet.h */,
+				07F774AE219B9675002223CC /* FMResultSet.m */,
+				07F774AA219B9674002223CC /* EasyParking-Bridging-Header.h */,
+			);
+			path = FMDB;
+			sourceTree = "<group>";
+		};
+		07FA5003219CEAB40066AF26 /* location */ = {
+			isa = PBXGroup;
+			children = (
+				07FA5004219CEAD00066AF26 /* LocationViewController.swift */,
+			);
+			path = location;
+			sourceTree = "<group>";
+		};
+		07FA5010219CF5A60066AF26 /* addTicket */ = {
+			isa = PBXGroup;
+			children = (
+				07FA5011219CF5B60066AF26 /* AddTicketViewController.swift */,
+			);
+			path = addTicket;
+			sourceTree = "<group>";
+		};
+		07FD47D8219A4A20004413C1 /* help */ = {
+			isa = PBXGroup;
+			children = (
+				07FD47D9219A4A2D004413C1 /* HelpViewController.swift */,
+			);
+			path = help;
+			sourceTree = "<group>";
+		};
+		07FEE884218A6DDA00632133 /* domain */ = {
+			isa = PBXGroup;
+			children = (
+				07FEE893218A803300632133 /* exceptions */,
+				07FEE885218A6DE500632133 /* User.swift */,
+				070269EF218D13620009EABC /* Entity.swift */,
+				07FA5006219CF00B0066AF26 /* ParkingPaymentReceipt.swift */,
+			);
+			path = domain;
+			sourceTree = "<group>";
+		};
+		07FEE887218A788500632133 /* service */ = {
+			isa = PBXGroup;
+			children = (
+				07FEE88A218A794400632133 /* interfaces */,
+				070269F6218D17160009EABC /* ServiceBase.swift */,
+				07FEE888218A789500632133 /* UserService.swift */,
+				07FA500E219CF4F20066AF26 /* ParkingPaymentReceiptService.swift */,
+			);
+			path = service;
+			sourceTree = "<group>";
+		};
+		07FEE88A218A794400632133 /* interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				07FEE88B218A795A00632133 /* IUserService.swift */,
+				070269F4218D16F20009EABC /* IServiceBase.swift */,
+				07FA500C219CF4D70066AF26 /* IParkingPaymentReceiptService.swift */,
+			);
+			path = interfaces;
+			sourceTree = "<group>";
+		};
+		07FEE88D218A7A1800632133 /* repository */ = {
+			isa = PBXGroup;
+			children = (
+				07FEE88E218A7A1E00632133 /* interfaces */,
+				07FEE891218A7A4300632133 /* UserRepository.swift */,
+				070269ED218D13040009EABC /* RepositoryBase.swift */,
+				07FA500A219CF34F0066AF26 /* ParkingPaymentReceiptRepository.swift */,
+			);
+			path = repository;
+			sourceTree = "<group>";
+		};
+		07FEE88E218A7A1E00632133 /* interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				07FEE88F218A7A2800632133 /* IUserRepository.swift */,
+				070269EB218D12A90009EABC /* IRepositoryBase.swift */,
+				07FA5008219CF3260066AF26 /* IParkingPaymentReceiptRepository.swift */,
+			);
+			path = interfaces;
+			sourceTree = "<group>";
+		};
+		07FEE893218A803300632133 /* exceptions */ = {
+			isa = PBXGroup;
+			children = (
+				07FEE894218A804C00632133 /* RepositoryError.swift */,
+			);
+			path = exceptions;
+			sourceTree = "<group>";
+		};
+		07FFDE5F219106A600F26365 /* login */ = {
+			isa = PBXGroup;
+			children = (
+				07FFDE60219106BD00F26365 /* LoginViewController.swift */,
+			);
+			path = login;
+			sourceTree = "<group>";
+		};
+		07FFDE62219108EF00F26365 /* main */ = {
+			isa = PBXGroup;
+			children = (
+				07FFDE632191090100F26365 /* MainMenuTableViewController.swift */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		07FFDE6521910A7A00F26365 /* main-menu */ = {
+			isa = PBXGroup;
+			children = (
+				07CD28BC21912AB4001D62A9 /* contacts.png */,
+				0700551921927A6500CE2ACF /* support.png */,
+				07CD28BA21912AA2001D62A9 /* location_settings.png */,
+				07CD28B821912A98001D62A9 /* logout.png */,
+				07CD28B6219129B8001D62A9 /* location.png */,
+				07CD28B421912967001D62A9 /* report.png */,
+				07CD28B221912897001D62A9 /* add.png */,
+				07FFDE6621910AB600F26365 /* home.png */,
+			);
+			path = "main-menu";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		077C2315218920E2004FBF3E /* EasyParking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 077C2328218920E5004FBF3E /* Build configuration list for PBXNativeTarget "EasyParking" */;
+			buildPhases = (
+				077C2312218920E2004FBF3E /* Sources */,
+				077C2313218920E2004FBF3E /* Frameworks */,
+				077C2314218920E2004FBF3E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EasyParking;
+			productName = EasyParking;
+			productReference = 077C2316218920E2004FBF3E /* EasyParking.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		077C230E218920E2004FBF3E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Carlos Jose Bulado";
+				TargetAttributes = {
+					077C2315218920E2004FBF3E = {
+						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1010;
+					};
+				};
+			};
+			buildConfigurationList = 077C2311218920E2004FBF3E /* Build configuration list for PBXProject "EasyParking" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 077C230D218920E2004FBF3E;
+			productRefGroup = 077C2317218920E2004FBF3E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				077C2315218920E2004FBF3E /* EasyParking */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		077C2314218920E2004FBF3E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				077C2324218920E5004FBF3E /* LaunchScreen.storyboard in Resources */,
+				07CD28B921912A98001D62A9 /* logout.png in Resources */,
+				07F774BC219B9D33002223CC /* Database.sqlite in Resources */,
+				077C232D21892554004FBF3E /* easy-parking-logo.jpg in Resources */,
+				07CD28BD21912AB5001D62A9 /* contacts.png in Resources */,
+				07CD28B521912967001D62A9 /* report.png in Resources */,
+				07FFDE6721910AB600F26365 /* home.png in Resources */,
+				07CD28B321912898001D62A9 /* add.png in Resources */,
+				07CD28BB21912AA2001D62A9 /* location_settings.png in Resources */,
+				0700551A21927A6500CE2ACF /* support.png in Resources */,
+				07CD28B7219129B8001D62A9 /* location.png in Resources */,
+				077C2321218920E5004FBF3E /* Assets.xcassets in Resources */,
+				077C231F218920E2004FBF3E /* Main.storyboard in Resources */,
+				07FE67722193AD0D002EB825 /* Settings.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		077C2312218920E2004FBF3E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07FFDE61219106BD00F26365 /* LoginViewController.swift in Sources */,
+				07FEE890218A7A2800632133 /* IUserRepository.swift in Sources */,
+				07F774B8219B9675002223CC /* FMResultSet.m in Sources */,
+				07F774BA219B9675002223CC /* FMDatabase.m in Sources */,
+				07005518219279F000CE2ACF /* SupportViewController.swift in Sources */,
+				07FD47DC219A4DB5004413C1 /* Database.swift in Sources */,
+				07FA5009219CF3260066AF26 /* IParkingPaymentReceiptRepository.swift in Sources */,
+				077C233121892AA3004FBF3E /* SignUpFirstPageViewController.swift in Sources */,
+				07FA500F219CF4F20066AF26 /* ParkingPaymentReceiptService.swift in Sources */,
+				070269F5218D16F20009EABC /* IServiceBase.swift in Sources */,
+				070269F0218D13620009EABC /* Entity.swift in Sources */,
+				07FA5012219CF5B60066AF26 /* AddTicketViewController.swift in Sources */,
+				070269EE218D13040009EABC /* RepositoryBase.swift in Sources */,
+				07FEE892218A7A4300632133 /* UserRepository.swift in Sources */,
+				07FEE88C218A795A00632133 /* IUserService.swift in Sources */,
+				07FA5007219CF00B0066AF26 /* ParkingPaymentReceipt.swift in Sources */,
+				07CD28B121911332001D62A9 /* AlertUtil.swift in Sources */,
+				07FEE895218A804C00632133 /* RepositoryError.swift in Sources */,
+				07FEE883218A6C0A00632133 /* SignUpSecondPageViewController.swift in Sources */,
+				07F774B7219B9675002223CC /* FMDatabasePool.m in Sources */,
+				07FEE889218A789500632133 /* UserService.swift in Sources */,
+				077C231C218920E2004FBF3E /* ViewController.swift in Sources */,
+				070269F3218D159A0009EABC /* SoftwareEmbeddedDatabase.swift in Sources */,
+				070269F7218D17160009EABC /* ServiceBase.swift in Sources */,
+				07FA500B219CF34F0066AF26 /* ParkingPaymentReceiptRepository.swift in Sources */,
+				07F774B6219B9675002223CC /* FMDatabaseQueue.m in Sources */,
+				070269EC218D12A90009EABC /* IRepositoryBase.swift in Sources */,
+				07FA500D219CF4D70066AF26 /* IParkingPaymentReceiptService.swift in Sources */,
+				07F774B9219B9675002223CC /* FMDatabaseAdditions.m in Sources */,
+				070269EA218D107A0009EABC /* TableTitleLabelModel.swift in Sources */,
+				07FEE886218A6DE500632133 /* User.swift in Sources */,
+				07FD47DA219A4A2D004413C1 /* HelpViewController.swift in Sources */,
+				070055152192694A00CE2ACF /* ProfileViewController.swift in Sources */,
+				077C231A218920E2004FBF3E /* AppDelegate.swift in Sources */,
+				07FA5005219CEAD00066AF26 /* LocationViewController.swift in Sources */,
+				07FE67742193B963002EB825 /* SettingsUtil.swift in Sources */,
+				07FFDE642191090100F26365 /* MainMenuTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		077C231D218920E2004FBF3E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				077C231E218920E2004FBF3E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		077C2322218920E5004FBF3E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				077C2323218920E5004FBF3E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		077C2326218920E5004FBF3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		077C2327218920E5004FBF3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		077C2329218920E5004FBF3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U3658C25H4;
+				INFOPLIST_FILE = EasyParking/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.parkingsystems.EasyParking;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "EasyParking/FMDB/EasyParking-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		077C232A218920E5004FBF3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U3658C25H4;
+				INFOPLIST_FILE = EasyParking/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.parkingsystems.EasyParking;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "EasyParking/FMDB/EasyParking-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		077C2311218920E2004FBF3E /* Build configuration list for PBXProject "EasyParking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				077C2326218920E5004FBF3E /* Debug */,
+				077C2327218920E5004FBF3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		077C2328218920E5004FBF3E /* Build configuration list for PBXNativeTarget "EasyParking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				077C2329218920E5004FBF3E /* Debug */,
+				077C232A218920E5004FBF3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 077C230E218920E2004FBF3E /* Project object */;
+}

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Employees</key>
+	<array>
+		<dict>
+			<key>id</key>
+			<integer>2</integer>
+			<key>name</key>
+			<string>Parttime</string>
+			<key>salary</key>
+			<real>1500</real>
+		</dict>
+		<dict>
+			<key>id</key>
+			<integer>1</integer>
+			<key>name</key>
+			<string>Fulltime</string>
+			<key>salary</key>
+			<real>3000</real>
+		</dict>
+	</array>
+	<key>User</key>
+	<dict>
+		<key>id</key>
+		<integer>1</integer>
+		<key>name</key>
+		<string>Administrator</string>
+		<key>login</key>
+		<string>admin</string>
+		<key>password</key>
+		<string>123</string>
+	</dict>
+	<key>Colour</key>
+	<array>
+		<string>Green</string>
+		<string>Blue</string>
+		<string>Red</string>
+		<string>Black</string>
+		<string>White</string>
+	</array>
+</dict>
+</plist>

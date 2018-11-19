@@ -31,6 +31,7 @@
 		07CD28B921912A98001D62A9 /* logout.png in Resources */ = {isa = PBXBuildFile; fileRef = 07CD28B821912A98001D62A9 /* logout.png */; };
 		07CD28BB21912AA2001D62A9 /* location_settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 07CD28BA21912AA2001D62A9 /* location_settings.png */; };
 		07CD28BD21912AB5001D62A9 /* contacts.png in Resources */ = {isa = PBXBuildFile; fileRef = 07CD28BC21912AB4001D62A9 /* contacts.png */; };
+		07F58AEC219E47720023A15A /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F58AEB219E47720023A15A /* ReportViewController.swift */; };
 		07F774B6219B9675002223CC /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F774AB219B9675002223CC /* FMDatabaseQueue.m */; };
 		07F774B7219B9675002223CC /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F774AC219B9675002223CC /* FMDatabasePool.m */; };
 		07F774B8219B9675002223CC /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F774AE219B9675002223CC /* FMResultSet.m */; };
@@ -48,6 +49,8 @@
 		07FD47DC219A4DB5004413C1 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FD47DB219A4DB5004413C1 /* Database.swift */; };
 		07FE67722193AD0D002EB825 /* Settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 07FE67712193AD0D002EB825 /* Settings.plist */; };
 		07FE67742193B963002EB825 /* SettingsUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FE67732193B963002EB825 /* SettingsUtil.swift */; };
+		07FE956221A1D64D00BEA546 /* ReportsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FE956121A1D64D00BEA546 /* ReportsViewController.swift */; };
+		07FE956421A1DD1700BEA546 /* ReportsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FE956321A1DD1700BEA546 /* ReportsTableViewController.swift */; };
 		07FEE883218A6C0A00632133 /* SignUpSecondPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FEE882218A6C0A00632133 /* SignUpSecondPageViewController.swift */; };
 		07FEE886218A6DE500632133 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FEE885218A6DE500632133 /* User.swift */; };
 		07FEE889218A789500632133 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FEE888218A789500632133 /* UserService.swift */; };
@@ -87,6 +90,7 @@
 		07CD28B821912A98001D62A9 /* logout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logout.png; sourceTree = "<group>"; };
 		07CD28BA21912AA2001D62A9 /* location_settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = location_settings.png; sourceTree = "<group>"; };
 		07CD28BC21912AB4001D62A9 /* contacts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = contacts.png; sourceTree = "<group>"; };
+		07F58AEB219E47720023A15A /* ReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
 		07F774AA219B9674002223CC /* EasyParking-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EasyParking-Bridging-Header.h"; sourceTree = "<group>"; };
 		07F774AB219B9675002223CC /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
 		07F774AC219B9675002223CC /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
@@ -111,6 +115,8 @@
 		07FD47DB219A4DB5004413C1 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 		07FE67712193AD0D002EB825 /* Settings.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Settings.plist; sourceTree = "<group>"; };
 		07FE67732193B963002EB825 /* SettingsUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsUtil.swift; sourceTree = "<group>"; };
+		07FE956121A1D64D00BEA546 /* ReportsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportsViewController.swift; sourceTree = "<group>"; };
+		07FE956321A1DD1700BEA546 /* ReportsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportsTableViewController.swift; sourceTree = "<group>"; };
 		07FEE882218A6C0A00632133 /* SignUpSecondPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpSecondPageViewController.swift; sourceTree = "<group>"; };
 		07FEE885218A6DE500632133 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		07FEE888218A789500632133 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
@@ -220,6 +226,8 @@
 		077C232E21892A71004FBF3E /* pages */ = {
 			isa = PBXGroup;
 			children = (
+				07FE956021A1D63F00BEA546 /* reports */,
+				07F58AEA219E46690023A15A /* report */,
 				07FA5010219CF5A60066AF26 /* addTicket */,
 				07FA5003219CEAB40066AF26 /* location */,
 				07FD47D8219A4A20004413C1 /* help */,
@@ -239,6 +247,14 @@
 				07FEE882218A6C0A00632133 /* SignUpSecondPageViewController.swift */,
 			);
 			path = signup;
+			sourceTree = "<group>";
+		};
+		07F58AEA219E46690023A15A /* report */ = {
+			isa = PBXGroup;
+			children = (
+				07F58AEB219E47720023A15A /* ReportViewController.swift */,
+			);
+			path = report;
 			sourceTree = "<group>";
 		};
 		07F774A9219B962B002223CC /* FMDB */ = {
@@ -282,6 +298,15 @@
 				07FD47D9219A4A2D004413C1 /* HelpViewController.swift */,
 			);
 			path = help;
+			sourceTree = "<group>";
+		};
+		07FE956021A1D63F00BEA546 /* reports */ = {
+			isa = PBXGroup;
+			children = (
+				07FE956121A1D64D00BEA546 /* ReportsViewController.swift */,
+				07FE956321A1DD1700BEA546 /* ReportsTableViewController.swift */,
+			);
+			path = reports;
 			sourceTree = "<group>";
 		};
 		07FEE884218A6DDA00632133 /* domain */ = {
@@ -461,6 +486,8 @@
 			files = (
 				07FFDE61219106BD00F26365 /* LoginViewController.swift in Sources */,
 				07FEE890218A7A2800632133 /* IUserRepository.swift in Sources */,
+				07FE956421A1DD1700BEA546 /* ReportsTableViewController.swift in Sources */,
+				07F58AEC219E47720023A15A /* ReportViewController.swift in Sources */,
 				07F774B8219B9675002223CC /* FMResultSet.m in Sources */,
 				07F774BA219B9675002223CC /* FMDatabase.m in Sources */,
 				07005518219279F000CE2ACF /* SupportViewController.swift in Sources */,
@@ -480,6 +507,7 @@
 				07FEE883218A6C0A00632133 /* SignUpSecondPageViewController.swift in Sources */,
 				07F774B7219B9675002223CC /* FMDatabasePool.m in Sources */,
 				07FEE889218A789500632133 /* UserService.swift in Sources */,
+				07FE956221A1D64D00BEA546 /* ReportsViewController.swift in Sources */,
 				077C231C218920E2004FBF3E /* ViewController.swift in Sources */,
 				070269F3218D159A0009EABC /* SoftwareEmbeddedDatabase.swift in Sources */,
 				070269F7218D17160009EABC /* ServiceBase.swift in Sources */,

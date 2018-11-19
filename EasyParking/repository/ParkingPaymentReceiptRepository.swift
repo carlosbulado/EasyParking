@@ -10,6 +10,24 @@ import Foundation
 
 class ParkingPaymentReceiptRepository : RepositoryBase, IParkingPaymentReceiptRepository
 {
+    func getAllFromUser(user: User) -> [ParkingPaymentReceipt] {
+        let sql = "select * from ParkingPaymentReceipt where userId = ?"
+        let results = Database.select(sql, [user.id as Any])
+        var retn : [ParkingPaymentReceipt] = []
+        
+        if results.count > 0
+        {
+            for i in 0...results.count - 1
+            {
+                var dic = results[i] as Dictionary<String, AnyObject>
+                dic["User"] = user
+                retn.append(ParkingPaymentReceipt.parse(dic))
+            }
+        }
+        
+        return retn
+    }
+    
     static let INSERT_INTO : String = "INSERT INTO ParkingPaymentReceipt (userId, hoursParked, date, lotNumber, SpotNumber, PaymentMethod, PaymentAmount) VALUES (?, ?, ?, ?, ?, ?, ?)"
     static let UPDATE : String = "UPDATE ParkingPaymentReceipt set userId = ?, hoursParked = ?, date = ?, lotNumber = ?, SpotNumber = ?, PaymentMethod = ?, PaymentAmount = ? WHERE id = ?"
     

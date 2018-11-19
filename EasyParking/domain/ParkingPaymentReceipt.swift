@@ -15,7 +15,7 @@ class ParkingPaymentReceipt : Entity
     var date : Date
     var lotNumber : Int
     var SpotNumber : Int
-    var PaymentMethod : String
+    var PaymentMethod : Int
     var PaymentAmount : Double
     
     override init()
@@ -25,25 +25,41 @@ class ParkingPaymentReceipt : Entity
         self.date = Date()
         self.lotNumber = 0
         self.SpotNumber = 0
-        self.PaymentMethod = String()
+        self.PaymentMethod = 0
         self.PaymentAmount = 0
         super.init()
     }
-    /*
-     Parking payment receipt should accept following information from the user
-     - User Email Address
-     - Car plate number
-     - Car Company [upon selection of company appropriate logo should be
-     displayed]
-     - Car color
-     - No. of hours parked
-     - Date and Time
-     - Lot number
-     - Spot number
-     - Payment method
-     - Payment amount
-     After entering all information, it should be displayed in proper format in
-     next screen. You may also generate pdf contain all information in proper
-     format.
- */
+    
+    static func parse(_ newUser : Dictionary<String, AnyObject>) -> ParkingPaymentReceipt
+    {
+        let obj = ParkingPaymentReceipt()
+        for (k, v) in newUser
+        {
+            var value : String = ""
+            if k != "User"
+            {
+                value = v as! String
+            }
+            
+            switch k
+            {
+            case "hoursParked":
+                obj.hoursParked = Double(value)!
+            case "date":
+                obj.date = Date(timeIntervalSince1970: TimeInterval(value)!)
+            case "lotNumber":
+                obj.lotNumber = Int(value)!
+            case "SpotNumber":
+                obj.SpotNumber = Int(value)!
+            case "PaymentMethod":
+                obj.PaymentMethod = Int(value)!
+            case "PaymentAmount":
+                obj.PaymentAmount = Double(value)!
+            case "User":
+                obj.user = v as! User
+            default: break
+            }
+        }
+        return obj
+    }
 }

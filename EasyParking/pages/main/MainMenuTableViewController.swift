@@ -32,7 +32,7 @@ class MainMenuTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return section == 0 ? 4 : 4
+        return section == 0 ? 2 : 4
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -41,17 +41,17 @@ class MainMenuTableViewController: UITableViewController {
             switch indexPath.row
             {
             case 0:
-                print("home")
-            case 1:
                 print("Navigate to Add Ticket Page")
                 let sb = UIStoryboard(name: "Main", bundle: nil)
                 let mainVC = sb.instantiateViewController(withIdentifier: "addTicketVC") as! AddTicketViewController
                 mainVC.loggedUser = self.loggedUser
                 navigationController?.pushViewController(mainVC, animated: true)
-            case 2:
-                print("report")
-            case 3:
-                print("location")
+            case 1:
+                print("Navigate to Reports Page")
+                let sb = UIStoryboard(name: "Main", bundle: nil)
+                let mainVC = sb.instantiateViewController(withIdentifier: "reportsTV") as! ReportsTableViewController
+                mainVC.loggedUser = self.loggedUser
+                navigationController?.pushViewController(mainVC, animated: true)
             default:
                 print("default")
             }

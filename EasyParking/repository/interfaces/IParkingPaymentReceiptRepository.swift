@@ -10,5 +10,5 @@ import Foundation
 
 protocol IParkingPaymentReceiptRepository : IRepositoryBase
 {
-    
+    func getAllFromUser(user: User) -> [ParkingPaymentReceipt]
 }

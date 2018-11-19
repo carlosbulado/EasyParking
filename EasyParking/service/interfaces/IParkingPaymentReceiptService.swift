@@ -10,5 +10,5 @@ import Foundation
 
 protocol IParkingPaymentReceiptService : IServiceBase
 {
-    
+    func getAllFromUser(user : User) -> [ParkingPaymentReceipt]
 }

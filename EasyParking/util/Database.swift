@@ -24,20 +24,25 @@ class Database
         myDatabase.open()
         var newTable = "CREATE TABLE IF NOT EXISTS User (id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT, login TEXT, password TEXT, contactNumber TEXT, plateNumber TEXT, email TEXT, carCompany TEXT, carColor TEXT)"
         myDatabase.executeStatements(newTable)
-        newTable = "CREATE TABLE IF NOT EXISTS ParkingPaymentReceipt (id INTEGER PRIMARY KEY AUTOINCREMENT, userId INTEGER, hoursParked REAL, date NUMERIC, lotNumber INTEGER, SpotNumber INTEGER, PaymentMethod TEXT, PaymentAmount REAL)"
+        newTable = "CREATE TABLE IF NOT EXISTS ParkingPaymentReceipt (id INTEGER PRIMARY KEY AUTOINCREMENT, userId INTEGER, hoursParked REAL, date NUMERIC, lotNumber INTEGER, SpotNumber INTEGER, PaymentMethod INTEGER, PaymentAmount REAL)"
         myDatabase.executeStatements(newTable)
         myDatabase.close()
     }
     
     static func insertBasicRegs()
     {
-        let _ = Database.save("insert into User (name, login, password) values (?, ?, ?)", ["Administrator", "admin", "123"])
+        let _ = Database.save("insert into User (name, login, password, plateNumber, carCompany, carColor, email) values (?, ?, ?, ?, ?, ?, ?)", ["Administrator", "admin", "123", "DIY 000", "Honda", "Green", "adm@adm.com"])
+        let _ = Database.save("insert into ParkingPaymentReceipt (userId, hoursParked, date, lotNumber, SpotNumber, PaymentMethod, PaymentAmount) values (?, ?, ?, ?, ?, ?, ?)", ["1", "2", "1542589241.4228", "1", "1", "0", "8"])
     }
     
     static func save(_ sql : String, _ params : [Any]) -> Bool
     {
         myDatabase.open()
         let saved : Bool = myDatabase.executeUpdate(sql, withArgumentsIn: params)
+        if !saved
+        {
+            print("didnt save - \(sql)")
+        }
         myDatabase.close()
         return saved
     }
